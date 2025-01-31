@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "langgraph-rag"
+version = "0.1.0"
+description = ""
+authors = ["Yaroslav Kovaliv <tlcees@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.1"
+black = "^25.1.0"
+isort = "^6.0.0"
+langchain = "^0.3.17"
+langchain-openai = "^0.3.3"
+langgraph = "^0.2.68"
+langchainhub = "^0.1.21"
+langchain-community = "^0.3.16"
+beautifulsoup4 = "^4.12.3"
+tavily-python = "^0.5.0"
+langchain-chroma = "^0.2.1"
+pytest = "^8.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
