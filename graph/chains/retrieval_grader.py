@@ -1,6 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate
-from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
+from pydantic import BaseModel, Field
 
 llm = ChatOpenAI(temperature=0)
 
@@ -24,7 +24,7 @@ Give a binary score 'yes' or 'no' score to indicate whether the document is rele
 grade_prompt = ChatPromptTemplate.from_messages(
     [
         ("system", system),
-        ("human", "Retrieved document: \n\n {document} \n\n User question: {question}")
+        ("human", "Retrieved document: \n\n {document} \n\n User question: {question}"),
     ]
 )
 
